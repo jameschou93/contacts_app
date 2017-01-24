@@ -1,0 +1,6 @@
+
+First Name: <%= @contact.first_name %><br>
+Last Name: <%= @contact.last_name %><br>
+Email: <%= @contact.email %><br>
+Phone Number: <%= @contact.phone_number %><br>
+<%= link_to "END HIS/HER CAREER", "/contacts/#{@contact.id}", method: :delete %>
