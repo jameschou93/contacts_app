@@ -34,4 +34,7 @@ def destroy
   @contact.delete
   render 'destroy.html.erb'
 end
+
+
+
 end
