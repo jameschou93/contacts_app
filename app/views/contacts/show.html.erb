@@ -1,6 +1,18 @@
 
+<div class="well">
+  
+
 First Name: <%= @contact.first_name %><br>
 Last Name: <%= @contact.last_name %><br>
 Email: <%= @contact.email %><br>
+Groups: <% @contact.groups.each do|group| %>
+<%= group.name %>
+<% end %><br>
+Address: <%= @contact.address %><br>
+Longitude: <%= @contact.longitude %>
+Latitude: <%= @contact.latitude %><br>
 Phone Number: <%= @contact.phone_number %><br>
+Created By: <%= @contact.user.name %>
 <%= link_to "END HIS/HER CAREER", "/contacts/#{@contact.id}", method: :delete %>
+
+</div>
